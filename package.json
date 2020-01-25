@@ -1,0 +1,18 @@
+{
+  "name": "30days",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Teddy <teddy.dev10@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "webDev": "live-server src/assets/index.html --browser='Google Chrome'",
+    "watch:css": "node-sass --watch src/assets/scss/style.scss -o dist/assets/css/style.css",
+    "start": "npm-run-all --parallel webDev watch:css"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
