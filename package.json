@@ -5,8 +5,8 @@
   "author": "Teddy <teddy.dev10@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "webDev": "live-server src/assets/index.html --browser='Google Chrome'",
-    "watch:css": "node-sass --watch src/assets/scss/style.scss -o dist/assets/css/style.css",
+    "webDev": "live-server --browser='Google Chrome'",
+    "watch:css": "node-sass scss/style.scss -o css/ -w",
     "start": "npm-run-all --parallel webDev watch:css"
   },
   "devDependencies": {
